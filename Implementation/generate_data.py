@@ -207,4 +207,3 @@ def generate_features(player, team, opponent, season_type, home_game, b2b=None):
     ret[ret.columns] = ret[ret.columns].apply(pd.to_numeric, errors='coerce')
 
     return ret
-
