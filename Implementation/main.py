@@ -33,12 +33,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # Add command line arguments
-    parser.add_argument('--player', help='Player Name')
-    parser.add_argument('--team', help='Team Name')
-    parser.add_argument('--opponent', help='Opponent Team Name')
-    parser.add_argument('--season_type', help='Regular Season or Playoffs')
-    parser.add_argument('--home_game', help='1 = Home, 0 = Away')
-    parser.add_argument('--b2b', help='1 = True, 0 = False')
+    parser.add_argument('--player', '-p', help='<Required> Player Name', required=True)
+    parser.add_argument('--team', '-t', help='<Required> Team Name', required=True)
+    parser.add_argument('--opponent', '-o', help='<Required> Opponent Team Name', required=True)
+    parser.add_argument('--season_type', '-s', help='<Required> Regular Season or Playoffs', required=True)
+    parser.add_argument('--home_game', '-hg', help='<Required> 1 = Home, 0 = Away', required=True)
+    parser.add_argument('--b2b', '-b', help='<Required> 1 = True, 0 = False')
 
     # Parse arguments
     args = parser.parse_args()
