@@ -4,7 +4,7 @@ import numpy as np
 from get_data import get_player_points, get_player_shooting, get_team_opponent_shooting, get_team_results, get_team_stats
 from datetime import datetime
 
-current_season = "2020-21"
+current_season = "2021-22"
 
 
 def generate_data(num_of_seasons, season_type, function):
