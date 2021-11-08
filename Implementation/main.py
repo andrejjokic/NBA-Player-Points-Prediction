@@ -36,9 +36,9 @@ def main_wrapper():
         pts = round(pts)
         text = f'Predicted points: {pts}'
     except Exception as e:
-        print(e)
-        text = 'Invalid input'
-
+        #text = 'Invalid input'
+        text = e
+        
     st.markdown(f"<h1 style='color:lightgreen'>{text}</h1>", unsafe_allow_html=True)
 
     
