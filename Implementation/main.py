@@ -35,9 +35,8 @@ def main_wrapper():
         pts = main(st.session_state.player, st.session_state.team, st.session_state.opponent, st.session_state.season_type, home_game, b2b)
         pts = round(pts)
         text = f'Predicted points: {pts}'
-    except Exception as e:
-        #text = 'Invalid input'
-        text = e
+    except:
+        text = 'Invalid input'
         
     st.markdown(f"<h1 style='color:lightgreen'>{text}</h1>", unsafe_allow_html=True)
 
