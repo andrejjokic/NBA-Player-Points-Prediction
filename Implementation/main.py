@@ -3,6 +3,7 @@ import argparse
 import pandas as pd
 import numpy as np
 import warnings
+import streamlit as st
 
 from generate_data import generate_features
 from model import load_model, predict_points
