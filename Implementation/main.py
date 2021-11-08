@@ -12,7 +12,7 @@ from model import load_model, predict_points
 def main(player, team, opponent, season_type, home_game, b2b=None):
     # Load model
     model_name = season_type.replace(" ", "").lower()
-    model = load_model(f"data/nba_predictor_{model_name}")
+    model = load_model(f"Implementation/data/nba_predictor_{model_name}")
 
     # Generate input features for a player
     features = generate_features(player, team, opponent, season_type, home_game, b2b)
